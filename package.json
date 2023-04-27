@@ -1,6 +1,6 @@
 {
-  "name": "vue-project",
-  "version": "0.0.0",
+  "name": "futures-pnl",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -11,9 +11,10 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.0.0",
-    "eslint": "^8.38.0",
+    "@vitejs/plugin-vue": "^4.2.1",
+    "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
-    "vite": "^4.1.4"
+    "vite": "^4.3.3",
+    "vite-plugin-pwa": "^0.14.7"
   }
 }

@@ -11,7 +11,7 @@ defineProps({
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      Calculate trade's R Ratio, profit and loss.
+      Calculate trade's risk, profit and loss.
     </h3>
   </div>
 </template>

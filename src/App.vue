@@ -6,7 +6,7 @@ import TurtleWorld from "./components/TurtleWorld.vue";
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/turtle-favicon.svg" width="125" height="125" />
+    <img alt="Trutle logo" class="logo" src="./assets/turtle-favicon.svg" width="125" height="125" />
     <div class="wrapper">
       <TurtleWorld msg="Turtle" />
     </div>
