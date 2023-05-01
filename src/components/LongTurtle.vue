@@ -9,21 +9,6 @@ defineProps({
   }
 })
 
-function calcLong() {
-  // Calculate risk and reward
-  let result = calcPnl('long', entry.value, stopLoss.value, takeProfit.value, size.value, leverage.value)
-  reward.value = result.reward
-  risk.value = result.risk
-  rrr.value = result.r
-  profit.value = result.profit
-  loss.value = result.loss
-
-  riskLevel.value = result.riskLevel
-  tradeRating.value = result.tradeRating
-  liquidation.value = result.liquidation
-  breakeven.value = result.breakeven
-}
-
 const entry = ref(10.0)
 const stopLoss = ref(9.5)
 const takeProfit = ref(12.0)
@@ -40,6 +25,21 @@ const riskLevel = ref()
 const tradeRating = ref()
 const liquidation = ref()
 const breakeven = ref()
+
+function calcLong() {
+  // Calculate risk and reward
+  let result = calcPnl('long', entry.value, stopLoss.value, takeProfit.value, size.value, leverage.value)
+  reward.value = result.reward
+  risk.value = result.risk
+  rrr.value = result.r
+  profit.value = result.profit
+  loss.value = result.loss
+
+  riskLevel.value = result.riskLevel
+  tradeRating.value = result.tradeRating
+  liquidation.value = result.liquidation
+  breakeven.value = result.breakeven
+}
 
 </script>
 
