@@ -1,10 +1,17 @@
 @import './base.css';
 
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  color: var(--color-heading);
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
   font-weight: normal;
 }
 
@@ -29,7 +36,7 @@ a,
 
   #app {
     display: grid;
-    grid-w-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
 }

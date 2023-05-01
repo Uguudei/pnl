@@ -1,24 +1,19 @@
 <script setup>
-import TheCalculator from "./components/TheCalculator.vue";
-import TheFooter from "./components/TheFooter.vue";
-import TurtleWorld from "./components/TurtleWorld.vue";
+import LongTurtle from "./components/LongTurtle.vue";
+import ShortTurtle from "./components/ShortTurtle.vue";
 </script>
 
 <template>
   <header>
     <img alt="Trutle logo" class="logo" src="./assets/turtle-favicon.svg" width="125" height="125" />
-    <div class="wrapper">
-      <TurtleWorld msg="Turtle" />
-    </div>
   </header>
 
   <main>
-    <TheCalculator></TheCalculator>
+    <div class="wrapper">
+      <LongTurtle position="Long"></LongTurtle>
+      <ShortTurtle position="Short"></ShortTurtle>
+    </div>>
   </main>
-
-  <footer>
-    <TheFooter />
-  </footer>
 </template>
 
 <style scoped>
@@ -38,11 +33,15 @@ header {
     padding-right: calc(var(--section-gap) / 2);
   }
 
-r  .logo {
+  .logo {
     margin: 0 2rem 0 0;
   }
 
-  header .wrapper {
+  header {
+    position: center;
+  }
+
+  .wrapper {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
