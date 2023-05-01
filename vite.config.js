@@ -10,9 +10,9 @@ export default defineConfig({
     vue(),
     VitePWA({
       manifest: {
-        name: 'Futures PnL',
+        name: 'Turtle PnL',
         short_name: 'PnL',
-        description: 'Futures PnL Calculator',
+        description: 'Turtle PnL',
         start_url: '/pnl/',
         scope: '/pnl/',
         lang: 'en',
