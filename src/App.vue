@@ -12,7 +12,7 @@ import ShortTurtle from "./components/ShortTurtle.vue";
     <div class="wrapper">
       <LongTurtle position="Long"></LongTurtle>
       <ShortTurtle position="Short"></ShortTurtle>
-    </div>>
+    </div>
   </main>
 </template>
 
